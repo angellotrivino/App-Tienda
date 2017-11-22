@@ -1,0 +1,2 @@
+c:\Users\SNH31D3R\Documents\Visual Studio 2015\Projects\SupermercadoOnline\SupermercadoOnline\SupermercadoOnline.WinPhone\SupermercadoOnline.WinPhone.csproj;neutral
+c:\Users\SNH31D3R\Documents\Visual Studio 2015\Projects\SupermercadoOnline\SupermercadoOnline\SupermercadoOnline\SupermercadoOnline.csproj;neutral

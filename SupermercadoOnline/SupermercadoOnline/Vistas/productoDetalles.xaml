@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SupermercadoOnline.Vistas.productoDetalles"
+             Title="{Binding nombre}">
+
+  <ScrollView>
+    <StackLayout>
+      <Image Source="{Binding imagen}" HeightRequest="200" WidthRequest="200"/>
+      <Label Text="{Binding nombre}" FontSize="28"/>
+      <Label Text="{Binding precio, StringFormat='{0:c} Pesos Colombianos'}" TextColor="Blue"/>
+      <Label Text="{Binding descripcion}"/>
+      <Button Text="Comprar" x:Name="ButtonComprar"/>
+    </StackLayout>
+  </ScrollView>
+  
+</ContentPage>

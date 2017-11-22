@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:VM="clr-namespace:SupermercadoOnline.ModeloDeVistas"
+             x:Class="SupermercadoOnline.Vistas.productos"
+             Title="SupermercadoOnline Comprar">
+
+  <ContentPage.BindingContext>
+    <VM:ProductosMV>
+      
+    </VM:ProductosMV>
+  </ContentPage.BindingContext>
+
+  <StackLayout Spacing="0">
+    <Button Text="Cargar Productos" Command="{Binding GetProductosCommand}"/>
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+    <ListView x:Name="ListViewProductos" ItemsSource="{Binding Productos}">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ImageCell Text="{Binding nombre}"
+                   Detail="{Binding precio, StringFormat='{0:c} Pesos Colombianos'}"
+                   ImageSource="{Binding imagen}"
+                />
+      </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+             
+</ContentPage>
